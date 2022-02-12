@@ -10,7 +10,7 @@ window.onload = function() {
   let top = document.querySelector(".top");
   let mid = document.querySelector(".mid");
   let bot = document.querySelector(".bot");
-  let cardSymbol = ["♦", "♠", "♣", "♥"];
+  let cardSymbol = ["&diams;", "&spades;", "&clubs;", "&hearts;"];
   let cardNumber = [
     "A",
     "2",
@@ -28,7 +28,13 @@ window.onload = function() {
   ];
   let targetSymbol = Math.floor(Math.random() * cardSymbol.length);
   let targetNumber = Math.floor(Math.random() * cardNumber.length);
+
   top.innerHTML = `${cardSymbol[targetSymbol]}`;
   mid.innerHTML = `${cardNumber[targetNumber]}`;
   bot.innerHTML = `${cardSymbol[targetSymbol]}`;
+
+  if (targetSymbol == 3 || targetSymbol == 0) {
+    top.style.color = "red";
+    bot.style.color = "red";
+  }
 };

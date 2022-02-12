@@ -17,11 +17,10 @@ body {
 }
 
 .top {
-  font-size: 50px;
+  font-size: 70px;
   display: flex;
   justify-content: start;
-  padding-top: 5px;
-  padding-left: 5px;
+  padding-left: 15px;
 }
 
 .mid {
@@ -31,10 +30,9 @@ body {
 }
 
 .bot {
-  font-size: 50px;
+  font-size: 70px;
   display: flex;
   justify-content: end;
   transform: rotateX(180deg);
   padding-right: 5px;
-  padding-bottom: 5px;
 }
